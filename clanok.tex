@@ -1,6 +1,6 @@
 % Metódy inžinierskej práce
 
-\documentclass[10pt,twoside,slovak,a4paper]{article}
+\documentclass[12pt,twoside,slovak,a4paper]{article}
 
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
@@ -11,19 +11,19 @@
 \usepackage{hyperref} % odkazy v texte budú aktívne (pri niektorých triedach dokumentov spôsobuje posun textu)
 
 \usepackage{cite}
-%\usepackage{times}
+\usepackage{times}
 
 \pagestyle{headings}
 
-\title{Názov\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2015/16, vedenie: Meno Priezvisko}} % meno a priezvisko vyučujúceho na cvičeniach
+\title{Choosing best sorting algorithms for one-dimensional and two-dimensional arrays\thanks{Semestrálny projekt v predmete Metódy inžinierskej práce, ak. rok 2021/22, vedenie: Konstantin Negrutsak}}
 
-\author{Meno Priezvisko\\[2pt]
+\author{Konstantin Negrutsak\\[2pt]
 	{\small Slovenská technická univerzita v Bratislave}\\
 	{\small Fakulta informatiky a informačných technológií}\\
-	{\small \texttt{...@stuba.sk}}
+	{\small \texttt{xnegrutsak@stuba.sk}}
 	}
 
-\date{\small 30. september 2015} % upravte
+\date{\small 25. october 2021}
 
 
 
@@ -31,94 +31,44 @@
 
 \maketitle
 
-\begin{abstract}
-\ldots
-\end{abstract}
+
+\section{Introduction}
+Nowadays all big companies are working with a big amount of data. And when it comes to working with it, it should be sorted in order to provide more efficient work with it. However, sorting itself must be optimized in order to save precious time. When it comes to sorting an array which consists of $10^{9}$ elements, optimization is a must. The goal of my research is to find out which algorithms are best for sorting one-dimensional arrays and for two-dimensional arrays. 
+
+Firstly, I will find out what are the major differences between algorithms and what are the parameters that we count when choosing an algorithm to sort our data. (I will tell about this in chapter~\ref{alg_diff})
+
+Secondly, I will define what algorithms are being used to sort data in each types of arrays
+(You can find it in chapters~\ref{1_dim_arr} and~\ref{2_dim_arr})
+
+All results of my tests will be clearly showcased in chapters ~\ref{1_dim_arr:showcase} and~\ref{2_dim_arr:showcase}.
+
+After this work I will sum up everything that I did in my coursework and do a conclusion about what algorithms are the best choices for these two types of arrays. (You will be able to find it in chapter~\ref{conclusion})
 
 
+\section{Algorithm differences} \label{alg_diff}
 
-\section{Úvod}
+\subsection{How hard is it to code it}
+\subsection{How much RAM does it consume}
+\subsection{How long does it takes to sort}
 
-Motivujte čitateľa a vysvetlite, o čom píšete. Úvod sa väčšinou nedelí na časti.
+\section{One-dimensional arrays} \label{1_dim_arr}
 
-Uveďte explicitne štruktúru článku. Tu je nejaký príklad.
-Základný problém, ktorý bol naznačený v úvode, je podrobnejšie vysvetlený v časti~\ref{nejaka}.
-Dôležité súvislosti sú uvedené v častiach~\ref{dolezita} a~\ref{dolezitejsia}.
-Záverečné poznámky prináša časť~\ref{zaver}.
+\subsection{Results of testing one-dimensional sort} \label{1_dim_arr:showcase}
+\subsection{Choosing the winner (One-dimensional arrays)}
 
+\section{Two-dimensional arrays} \label{2_dim_arr}
 
-
-\section{Nejaká časť} \label{nejaka}
-
-Z obr.~\ref{f:rozhod} je všetko jasné. 
-
-\begin{figure*}[tbh]
-\centering
-%\includegraphics[scale=1.0]{diagram.pdf}
-Aj text môže byť prezentovaný ako obrázok. Stane sa z neho označný plávajúci objekt. Po vytvorení diagramu zrušte znak \texttt{\%} pred príkazom \verb|\includegraphics| označte tento riadok ako komentár (tiež pomocou znaku \texttt{\%}).
-\caption{Rozhodujúci argument.}
-\label{f:rozhod}
-\end{figure*}
-
-
-
-\section{Iná časť} \label{ina}
-
-Základným problémom je teda\ldots{} Najprv sa pozrieme na nejaké vysvetlenie (časť~\ref{ina:nejake}), a potom na ešte nejaké (časť~\ref{ina:nejake}).\footnote{Niekedy môžete potrebovať aj poznámku pod čiarou.}
-
-Môže sa zdať, že problém vlastne nejestvuje\cite{Coplien:MPD}, ale bolo dokázané, že to tak nie je~\cite{Czarnecki:Staged, Czarnecki:Progress}. Napriek tomu, aj dnes na webe narazíme na všelijaké pochybné názory\cite{PLP-Framework}. Dôležité veci možno \emph{zdôrazniť kurzívou}.
-
-
-\subsection{Nejaké vysvetlenie} \label{ina:nejake}
-
-Niekedy treba uviesť zoznam:
-
-\begin{itemize}
-\item jedna vec
-\item druhá vec
-	\begin{itemize}
-	\item x
-	\item y
-	\end{itemize}
-\end{itemize}
-
-Ten istý zoznam, len číslovaný:
-
-\begin{enumerate}
-\item jedna vec
-\item druhá vec
-	\begin{enumerate}
-	\item x
-	\item y
-	\end{enumerate}
-\end{enumerate}
-
-
-\subsection{Ešte nejaké vysvetlenie} \label{ina:este}
-
-\paragraph{Veľmi dôležitá poznámka.}
-Niekedy je potrebné nadpisom označiť odsek. Text pokračuje hneď za nadpisom.
-
-
-
-\section{Dôležitá časť} \label{dolezita}
+\subsection{Results of testing two-dimensional sort} \label{2_dim_arr:showcase}
+\subsection{Choosing the winner (Two-dimensional arrays)}
 
 
 
 
-\section{Ešte dôležitejšia časť} \label{dolezitejsia}
+\section{Conclusion} \label{conclusion} 
 
 
 
+\bibliographystyle{plain}
+\bibliography{literatura.bib}
 
-\section{Záver} \label{zaver} % prípadne iný variant názvu
-
-
-
-%\acknowledgement{Ak niekomu chcete poďakovať\ldots}
-
-
-% týmto sa generuje zoznam literatúry z obsahu súboru literatura.bib podľa toho, na čo sa v článku odkazujete
-\bibliography{literatura}
-\bibliographystyle{plain} % prípadne alpha, abbrv alebo hociktorý iný
 \end{document}
