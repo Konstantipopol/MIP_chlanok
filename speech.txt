@@ -1,0 +1,13 @@
+Napísal som článok o triediacich algoritmoch.
+
+Výber najlepšieho triediaceho algoritmu je veľmi dôležitý, pretože chyby môžu viesť k značným oneskoreniam v práci programu.
+Čím väčšie sú údaje, tým dlhšie bude trvať ich triedenie.
+
+Koncept Big O nám pomáha pochopiť, koľko operácií vykoná algoritmus s rôznymi veľkosťami poľa.
+Toto je graf, kde ukazujem kroky, ktoré musíme urobiť po spočítaní pôvodnej zložitosti algoritmu.
+
+
+Spotreba RAM môže tiež viesť k oneskoreniu v našom algoritme. 
+Tiež by sme mali byť vždy opatrní, aby sme nevyčerpali RAM. 
+V opačnom prípade môže program spadnúť. 
+Toto je tabuľka, kde porovnávam 5 triediacich algoritmov podľa Big O a spotreby RAM. 
