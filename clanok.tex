@@ -1,6 +1,6 @@
 % Metódy inžinierskej práce
 
-\documentclass[12pt,twoside,a4paper]{article}
+\documentclass[12pt,oneside,a4paper]{article}
 
 \usepackage[slovak]{babel}
 %\usepackage[T1]{fontenc}
@@ -39,29 +39,30 @@ For a long time sorting arrays of data was very important because work with a so
 Firstly, I will find out what are the major differences between algorithms and what are the parameters that we count when choosing an algorithm to sort our data.
 (You can find it in chapter~\ref{alg_diff})
 
-Secondly, I will define which algorithms are being used to sort data in one-dimensional arrays and in two-dimensional arrays of different length.
-(You can find it in chapters~\ref{1_dim_arr} and~\ref{2_dim_arr})
+Secondly, I will define which algorithms are being used to sort data in one-dimensional arrays of different length.
+(You can find it in chapters~\ref{1_dim_arr})
 
-After all this work I will sum up everything that I did in my coursework and I will do a conclusion about what algorithms are the best choices for these two types of arrays. (You will be able to find it in chapter~\ref{conclusion})
+After all this work I will sum up everything that I did in my coursework and I will do a conclusion about what algorithms are the best choices for arrays of different length. (You will be able to find it in chapter~\ref{conclusion})
 
 \section{Algorithm differences} \label{alg_diff}
 
 Two main parameters we should focus on when it comes to choosing an algorithm are:
+
 \begin{itemize}
 \item BIG-O Complexity
 \item Memory consuming
 \end{itemize}
-In my coursework I will cover BIG-O Complexity and Memory consuming parameters.
+
 \subsection{BIG-O Complexity}
 To begin with, lets talk about BIG-O Complexity. This parameter demonstrates the dependence of the number of operations performed by the algorithm on the amount of information incoming. The smaller the growth of the function, the more efficient the algorithm is.
 For example the best scenario possible is O(1), when algorithm performs only one operation in order to get the needed result while the amount of information can be of any size possible.
 
 By default number of elements in an array is defined by N.
-In algorithms such as binary search complexity usually equals to O($\log_2N$). This is a very good result compared to default search, which complexity equals to O(N) (It is an algorithm in which we check up every consecutive element beginning with the first one in order to find the element we are looking for)
+In algorithms such as binary search complexity usually equals to O($\log_2N$). This is a very good result compared to brute force search, which complexity equals to O(N) (It is an algorithm in which we check up every consecutive element beginning with the first one in order to find the element we are looking for)
 
 There are other algorithms like Bubble sort or Exchange sort which complexity is O($N^{2}$) or above. These algorithms can be pretty fast for short arrays, but when it comes to sorting a very long array they are inefficient.
 
-The other thing I want to mention is that when we are counting a complexity of the algorithm we don't have to take constants into account. Because the major thing that complexity tells us is how many actions will algorithm perform on a very big array. And when we say big array we mean infinite array. In this case it doesn't matter whether complexity is O(N) or O(2N). Furthermore, we also don't have to take additional complexity into account. Basically it means that if we have an algorithm, which complexity is O(N+1) it will perform almost the same amount of actions as an algorithm with complexity O(N).
+The other thing I want to mention is that when we are counting a complexity of the algorithm we don't have to take constants into account. Because the major thing that complexity demonstrates us is how many actions will algorithm perform on a very big array. And when we say big array we mean array filled with infinite amount of elements. In this case it doesn't matter whether complexity is O(N) or O(2N). Furthermore, we also don't have to take additional complexity into account. Basically it means that if we have an algorithm, which complexity is O(N+1) it will perform almost the same amount of actions as an algorithm with complexity O(N).
 
 When we have an algorithm with complexity O($N^{2}+2^{N}$) we count the function with the slower growth as an additional complexity. In this example function $N^{2}$ grows slower than $2^{N}$ and we don't have to count it. So the final complexity will be O($2^{N}$).
 
@@ -77,6 +78,8 @@ Firstly, I want to compare the most popular sorting algorithms by their complexi
 One of the easiest sorting algorithm is a Bubble sort. Teachers and professors usually use it as an introduction to the sorting algorithms and Bubble sort is easy to code. This algorithm compares first two elements of an array and if the second one is less that the first one - it swaps them. Then it goes to the next pair of elements and does exactly the same. When it reaches the end of an array, it goes back to the beginning and compares elements again until the point when there will be no swaps on the iteration of the cycle. 
 
 Its complexity is O($N^{2}$) and memory consumption equals 1. This algorithm is very inefficient when it comes to sorting a big arrays, but when you need to sort small array it is very useful because coding it is very easy. 
+
+Bubble sort can also be optimized so it can be up to 10 times more efficient than common bubble sort.\cite{bubble}
 
 \subsection{Selection sort}
 Selection sort is another algorithm which is easy to implement. This algorithm finds the minimum in the entire list and swaps it with the first element. Then it finds the minimum in the remaining list(without first element) and swaps it with the second element. It continues going through the list like this until it finishes last swap. 
@@ -96,14 +99,9 @@ Merge sort itself divides our original array in halves, then it divides these ha
 
 Its complexity is O($N*\log_2N$) and memory consumption is N. While memory consumption is bigger than in algorithms that I described before, Merge sort works significantly faster when it comes to sorting big arrays. 
 
-I also want to mention that there are a lot of variations of a Merge sort such as Parallel Merge sort or Bitonic Merge sort and so on, which complexity differs from one to another. Information about these variations you can find in the article "Performance Analysis of Merge Sort Algorithms"\cite{merge}
-
-\section{Two-dimensional arrays} \label{2_dim_arr}
-
+I also want to mention that there are a lot of variations of a Merge sort such as Parallel Merge sort or Bitonic Merge sort and so on, which complexity differs from one to another.\cite{merge}
 
 \section{Conclusion} \label{conclusion} 
-
-
 
 \bibliographystyle{plain}
 \bibliography{literatura.bib}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.27)  7 NOV 2021 01:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.9.27)  13 NOV 2021 16:50
 entering extended mode
 **./clanok.tex
 (clanok.tex
@@ -343,30 +343,26 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 {C:/Users/Admin/AppData/Local/MiKTeX/pdftex/config/pdftex.map}]
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 60.
+(Font)              <8> on input line 61.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 60.
+(Font)              <6> on input line 61.
 
 
 LaTeX Font Warning: Font shape `IL2/ptm/m/sl' in size <12> not available
-(Font)              Font shape `IL2/ptm/m/it' tried instead on input line 71.
+(Font)              Font shape `IL2/ptm/m/it' tried instead on input line 72.
 
-[2] [3] (clanok.bbl
-Underfull \vbox (badness 7186) has occurred while \output is active []
-
- [4])
-[5] (clanok.aux)
+[2] [3] (clanok.bbl [4]) [5] (clanok.aux)
 Package rerunfilecheck Info: File `clanok.out' has not changed.
-(rerunfilecheck)             Checksum: 71198C180043AF9124772371FA4A82B5;1426.
+(rerunfilecheck)             Checksum: 97A1466BDF4532083DB76006612FB027;1269.
  ) 
 Here is how much of TeX's memory you used:
- 9374 strings out of 478864
- 136772 string characters out of 2858517
- 460677 words of memory out of 3000000
- 27136 multiletter control sequences out of 15000+600000
+ 9365 strings out of 478864
+ 136656 string characters out of 2858517
+ 460626 words of memory out of 3000000
+ 27127 multiletter control sequences out of 15000+600000
  421074 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 60i,7n,66p,643b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,7n,66p,681b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
 {C:/Program Files/MiKTeX/fonts/enc/dvips/base/8a.enc}{C:/Program Files/MiKTeX
 /fonts/enc/dvips/base/8r.enc}<C:/Program Files/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmmi12.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.
@@ -376,9 +372,9 @@ X/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX/fonts/type
 1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmb8a.
 pfb><C:/Program Files/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files
 /MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on clanok.pdf (5 pages, 118822 bytes).
+Output written on clanok.pdf (5 pages, 119297 bytes).
 PDF statistics:
- 133 PDF objects out of 1000 (max. 8388607)
+ 130 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 500000)
- 89 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
 

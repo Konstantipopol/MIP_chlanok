@@ -1,5 +1,12 @@
 \begin{thebibliography}{1}
 
+\bibitem{bubble}
+Ashrak~Rahman Lipu, Ruhul Amin, Md.~Nazrul Islam~Mondal, and Md.~Al Mamun.
+\newblock Exploiting parallelism for faster implementation of bubble sort
+  algorithm using fpga.
+\newblock In {\em 2016 2nd International Conference on Electrical, Computer
+  Telecommunication Engineering (ICECTE)}, pages 1--4, 2016.
+
 \bibitem{merge}
 Joella Lobo and Sonia Kuwelkar.
 \newblock Performance analysis of merge sort algorithms.
